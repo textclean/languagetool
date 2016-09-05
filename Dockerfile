@@ -10,5 +10,6 @@ RUN /bin/true \
   && rm /tmp/* \
   && apk del zip \
   && rm -rf /var/cache/apk/*
-ENTRYPOINT [ "java", "-jar", "/usr/languagetool/languagetool-commandline.jar" ]
+# Too many useful tools to limit to one
+#ENTRYPOINT [ "java", "-jar", "/usr/languagetool/languagetool-commandline.jar" ]
 
